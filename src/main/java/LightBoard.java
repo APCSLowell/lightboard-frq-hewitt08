@@ -10,7 +10,12 @@ public class LightBoard
    */
   public LightBoard(int numRows, int numCols)
   {
-    /* to be implemented in part (a) */
+    lights = new int[numRows][numCols];
+    for(int r = 0; r < lights.length; r++){
+      for(int c = 0; c < lights[r].length; c++){
+        lights[r][c] = (Math.random() <= 0.4);
+      }
+    }
 
   }
 
